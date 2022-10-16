@@ -6,11 +6,9 @@ const Header = (props) => {
     console.log('Click')
   }
   return (
-        <div style={{width:'30vw',textAlign:'center'}}>
+        <div style={headingStyle}>
             <h1>{props.title}</h1>
-            <Button onClick={onClick}/>
-            <br/>
-            <Button color="steelblue" text="Hello" onClick={onClick}/>
+            <Button text='Add' onClick={onClick}/>
         </div>
   )
 }
@@ -24,6 +22,6 @@ Header.propTypes = {
 }
 
 //CSS in JS
-const headingStyle = {color: 'red',backgroundColor: 'black'}
+const headingStyle = {width:'30vw',textAlign:'center'}
 
 export default Header

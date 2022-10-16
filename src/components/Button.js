@@ -1,17 +1,17 @@
 import PropTypes from 'prop-types'
 
 function Button({color,text,onClick}) {
-
+  const btn_style = {width: '100px'}
   return (
     <button 
     className="btn" 
     onClick = {onClick}
-    style={{backgroundColor:color,position:'absolute',right:'15%'}}>{text}
+    style={btn_style}>{text}
     </button>
   )
 }
 
-Button.defaultProps = {color:'red',text:'button'}
+Button.defaultProps = {color:'black',text:'button'}
 
 Button.propTypes = {
     color:PropTypes.string.isRequired,
